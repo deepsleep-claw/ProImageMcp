@@ -15,11 +15,11 @@
 Codex 用户只需先安装插件：
 
 ```sh
-codex plugin marketplace add OWNER/REPO
+codex plugin marketplace add deepsleep-claw/ProImageMcp
 codex plugin add proimage@image-mcp-local
 ```
 
-将 `OWNER/REPO` 替换为实际 GitHub 仓库。安装、配置、其他客户端接入和故障排查均以 QuickStart 为准。
+安装、配置、其他客户端接入和故障排查均以 QuickStart 为准。
 
 ## 可用工具
 

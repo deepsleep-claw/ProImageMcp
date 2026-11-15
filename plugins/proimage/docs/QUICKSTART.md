@@ -10,14 +10,14 @@
 - 一个支持 stdio 的 MCP 客户端；Codex 推荐使用插件安装。
 - OpenRouter、OpenAI 或 Gemini 的 API key，以及对应模型的使用权限。
 
-文中的 `OWNER/REPO` 表示实际 GitHub 仓库，`/absolute/path/to/repo` 表示仓库在本机的绝对路径。Windows 的 JSON 配置可使用 `C:/...` 形式的正斜线路径。
+GitHub 仓库为 `deepsleep-claw/ProImageMcp`；`/absolute/path/to/repo` 表示仓库在本机的绝对路径。Windows 的 JSON 配置可使用 `C:/...` 形式的正斜线路径。
 
 ## 给人类：手动安装
 
 ### 方式一：Codex 插件（推荐）
 
 ```sh
-codex plugin marketplace add OWNER/REPO
+codex plugin marketplace add deepsleep-claw/ProImageMcp
 codex plugin add proimage@image-mcp-local
 ```
 
@@ -28,7 +28,7 @@ codex plugin add proimage@image-mcp-local
 下载仓库到固定目录；发布仓库已包含可运行的 bundle，无需先执行 npm 安装或构建：
 
 ```sh
-git clone https://github.com/OWNER/REPO.git
+git clone https://github.com/deepsleep-claw/ProImageMcp.git
 ```
 
 服务启动参数统一为：
@@ -119,10 +119,10 @@ codex plugin add proimage@image-mcp-local
 
 ## 给 Agent：安装任务卡
 
-把下面整段发给具备终端和文件操作能力的 Agent。先替换目标客户端与仓库地址；API key 由用户在本机自行填写，不要贴进对话。
+把下面整段发给具备终端和文件操作能力的 Agent。先替换目标客户端；API key 由用户在本机自行填写，不要贴进对话。
 
 ```text
-请在这台机器上安装并验证 ProImage MCP，目标客户端是【填写客户端】，GitHub 仓库是【填写 OWNER/REPO】。
+请在这台机器上安装并验证 ProImage MCP，目标客户端是【填写客户端】，GitHub 仓库是 deepsleep-claw/ProImageMcp。
 
 执行要求：
 1. 先检查 node --version，要求 Node.js >= 22.19。若环境不满足，停止并说明需要用户完成的操作，不要自行安装系统软件。
