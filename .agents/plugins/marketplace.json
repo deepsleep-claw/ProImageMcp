@@ -1,0 +1,20 @@
+{
+  "name": "image-mcp-local",
+  "interface": {
+    "displayName": "ProImage Plugins"
+  },
+  "plugins": [
+    {
+      "name": "proimage",
+      "source": {
+        "source": "local",
+        "path": "./plugins/proimage"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

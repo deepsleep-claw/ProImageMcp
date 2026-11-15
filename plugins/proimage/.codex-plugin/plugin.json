@@ -1,0 +1,23 @@
+{
+  "name": "proimage",
+  "version": "0.1.1",
+  "description": "A lightweight MCP for image generation and editing.",
+  "author": {
+    "name": "ProImage contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ProImage",
+    "shortDescription": "Generate and edit images with configurable providers.",
+    "longDescription": "ProImage connects a local MCP server to configured image providers and saves generated images to disk.",
+    "developerName": "ProImage contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP server",
+      "Image generation",
+      "Image editing"
+    ],
+    "defaultPrompt": "Use ProImage to generate or edit an image."
+  },
+  "mcpServers": "./.mcp.json"
+}

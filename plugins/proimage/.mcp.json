@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "proimage": {
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/dist/index.js"],
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 1200
+    }
+  }
+}
